@@ -1,0 +1,46 @@
+{
+  "name": "valid-mimetype",
+  "version": "1.0.0",
+  "description": "Validate mimetype strings",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc --project \"tsconfig.prod.json\"",
+    "clean": "nuke -s \"build\"",
+    "test": "mocha \"test/**/*.spec.[j|t]s\" -r \"ts-node/register\"",
+    "prepack": "npm-run-all -s \"clean\" \"build\" \"test\""
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "keywords": [
+    "assertion",
+    "assert",
+    "mimetype",
+    "mime",
+    "regexp",
+    "regex",
+    "testing",
+    "test",
+    "validate"
+  ],
+  "author": {
+    "name": "George Thomas",
+    "url": "https://mgthomas99.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/mgthomas99/valid-mimetype/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgthomas99/valid-mimetype.git"
+  },
+  "homepage": "https://github.com/mgthomas99/valid-mimetype",
+  "license": "MIT"
+}
